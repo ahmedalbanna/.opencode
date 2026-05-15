@@ -1,0 +1,11 @@
+# OpenCode Rules Index
+# Maps trigger conditions to rule files that modify AI behavior.
+# Commands use this index to load relevant rules into context.
+
+rules:
+  - trigger: model_decision
+    description: When creating a new project from scratch
+    file: expert-simple-applications.md
+    load_on_commands:
+      - speckit.specify
+      - speckit.constitution
