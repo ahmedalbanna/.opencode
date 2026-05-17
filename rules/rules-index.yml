@@ -4,8 +4,14 @@
 
 rules:
   - trigger: model_decision
-    description: When creating a new project from scratch
+    description: When creating a new project from scratch (Arabic rules)
     file: expert-simple-applications.md
     load_on_commands:
       - speckit.specify
       - speckit.constitution
+
+  - trigger: model_decision
+    description: Global project rules — tech stack, code style, API contracts, naming, living docs
+    file: .agents/rules/ai-rules.md
+    load_on_commands:
+      - workflow.*
