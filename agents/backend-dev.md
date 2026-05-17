@@ -62,6 +62,24 @@ src/modules/<feature>/
 - Jest للـ Services (mock للـ Repository)
 - supertest لاختبارات e2e
 
+### إنشاء وحدة جديدة
+```
+nest generate resource <module-name>   ← ينشئ الهيكل الأساسي (module, controller, service, dto, entities)
+ثم عدّل:
+├── أضف DTOs مع class-validator + @ApiProperty
+├── أنشئ Repository للتعامل مع Prisma
+├── سجل الوحدة في app.module.ts
+├── أضف وثائق Swagger (@ApiTags, @ApiOperation, @ApiResponse)
+├── أنشئ Prisma migration: prisma migrate dev --name <description>
+└── اكتب اختبارات وحدة للـ Service و e2e للـ Controller (Jest + supertest)
+```
+
+### النشر والبيئة
+- `ConfigModule.forRoot({ validationSchema: Joi.object({...}) })` لتحميل .env
+- متغيرات البيئة الأساسية: `PORT`, `DATABASE_URL`, `JWT_SECRET`
+- أرفق `Dockerfile` (multi-stage) + `docker-compose.yml` (api + postgres)
+- `.env.example` يتتبع كل المتغيرات بدون أسرار حقيقية
+
 ## 🔗 Agent Orchestration
 
 أنت القائد الأساسي للخلفية. تستدعي الـ subagents التالية حسب الحاجة:

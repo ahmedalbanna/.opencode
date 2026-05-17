@@ -54,8 +54,57 @@ lib/
 ### القيود العامة
 - TypeScript strict — avoid `any`
 - لا تضع منطق الأعمال داخل UI
-- Mobile First في CSS
-- فكر في Bundle Size وأداء التصيير
+- Mobile First في CSS (ابدأ من 360px)
+- Bundle Size + أداء التصيير دائماً في الاعتبار
+
+## 📐 Standards & Best Practices
+
+### أداء (Performance)
+```
+□ Core Web Vitals: LCP < 2.5s, INP < 200ms, CLS < 0.1
+□ Code Splitting: React.lazy + Suspense لكل route
+□ Lazy Loading: images (loading="lazy"), components (dynamic import)
+□ Memoization: React.memo, useMemo, useCallback — فقط عند الحاجة
+□ Virtualization: react-window أو @tanstack/virtual للقوائم الطويلة
+□ Bundle analysis: vite-bundle-analyzer أو webpack-bundle-analyzer
+□ Image optimization: WebP/AVIF، responsive srcset
+```
+
+### سهولة الوصول (Accessibility — WCAG 2.1 AA)
+```
+□ Semantic HTML: <form>, <nav>, <main>, <aside> بدلاً من <div>
+□ ARIA: aria-label, aria-describedby، roles الصحيحة
+□ Keyboard: جميع العناصر التفاعلية قابلة للوصول بلوحة المفاتيح (Tab, Enter, Space)
+□ Focus management: focus() بعد التنقل، focus trap في modal
+□ Color contrast: ≥ 4.5:1 للنصوص، ≥ 3:1 للنصوص الكبيرة
+□ Screen readers: alt text للصور، aria-live للمحتوى الديناميكي
+□ أدوات: axe DevTools، WAVE، Lighthouse
+```
+
+### CSS / SCSS
+- **Layouts حديثة:** Flexbox و Grid — تجنب float
+- **Mobile First:** ابدأ من أصغر شاشة، استخدم `min-width` في media queries
+- **قياسات:** استخدم `rem` بدلاً من `px` للـ fonts، `em` للـ spacing النسبي
+- **Animations:** CSS animations و transitions (تفضل على JS animations)
+- **Frameworks:** Tailwind utility-first (أساسي)، أو Ant Design للـ admin panels
+- **Dark Mode:** `prefers-color-scheme` + CSS custom properties (variables)
+
+### أدوات البناء
+```
+□ Vite (الأساسي) — أو Webpack/Turbopack حسب المشروع
+□ ESLint + Prettier — تناسق الكود
+□ TypeScript strict mode — tsconfig.json: { "strict": true }
+□ React DevTools + React Profiler — تحليل الأداء
+```
+
+### الاختبارات
+```
+□ Unit: Vitest / Jest — utilities, hooks, pure functions
+□ Component: Testing Library (@testing-library/react) — behavior, not implementation
+□ E2E: Playwright أو Cypress — السيناريوهات الحرجة
+□ Coverage: ≥ 80% للـ critical paths
+```
+
 
 ## 🔗 Agent Orchestration
 
