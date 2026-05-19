@@ -74,10 +74,15 @@ hidden: false
 | حالات الطلب (created→paid→shipped) | State |
 | جدولة زمنية للمشروع | Gantt |
 | هيكل بيانات (JSON/YAML) | JSON / MindMap |
+| نظرة عامة على النظام مع الكيانات الخارجية | Context Level (DFD Level 0) |
+| تفصيل العمليات الداخلية وتدفق البيانات بينها | Data Flow Diagram (DFD Level 1+) |
 
 ### 4. قواعد كتابة PlantUML عالي الجودة
 
 ```
+□ للـ DFD: استخدم `collections` للكيانات الخارجية، `rectangle` للعمليات، `database` لمخازن البيانات
+□ للـ DFD: سمِّ تدفقات البيانات بوصف مختصر — `-> : "وصف التدفق"`
+□ للـ DFD: حافظ على اتساق الترقيم بين Level 0 و Level 1 (1.0, 2.0...)
 □ استخدم skinparam للشكل العام (backgroundColor, roundcorner)
 □ أضف title: واضحاً
 □ استخدم الألوان ( #Blue, #LightGreen, #Orange, #Pink, #LightGray)
