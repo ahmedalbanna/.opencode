@@ -72,11 +72,13 @@ hidden: false
 | مشكلة أداء (jank, بطء animation) على Flutter | `@mobile-specialist` | `.opencode/agents/mobile-specialist.md` |
 | مشكلة في استجابة الشاشة على أجهزة محددة (safe area, notch) | `@mobile-specialist` | `.opencode/agents/mobile-specialist.md` |
 | تصميم معقد يحتاج mock بيانات لإعادة البناء | `@test-writer` | `.opencode/agents/test-writer.md` |
+| تصميم جديد من Stitch يحتاج مراجعة بصرية وتناسق | `@stitch-designer` | `.opencode/agents/stitch-designer.md` | يولّد DESIGN.md، أنت تراجعه |
 
 ### عتبات التحويل
 - **وجدت مشكلة أداء** (jank، ارتفاع وقت بناء widget) → حول لـ `@mobile-specialist`
 - **تخطيط ينكسر على iOS/Android** (safe area, keyboard) → `@mobile-specialist`
 - **هيكل الـ widget معقد ويحتاج اختبارات** → `@test-writer`
+- **تصميم جديد من Stitch يمر للمراجعة** → راجع DESIGN.md، أبلغ الوكيل الأساسي بالملاحظات
 
 ## 📋 Output Format
 

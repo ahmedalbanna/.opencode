@@ -116,14 +116,17 @@ lib/
 | أداء Flutter، platform channels، رفع متجر | `@mobile-specialist` | `.opencode/agents/mobile-specialist.md` | يحلل أداء الموبايل، native interop، deployment |
 | كتابة اختبارات (unit + widget + integration) | `@test-writer` | `.opencode/agents/test-writer.md` | يكتب اختبارات React/Flutter ويغطي edge cases |
 | تدقيق تصميم (a11y، ألوان، تخطيط متجاوب) | `@ui-designer` | `.opencode/agents/ui-designer.md` | يراجع WCAG، design tokens، responsive layout |
+| إنشاء تصميم UI من وصف نصي (Stitch AI) | `@stitch-designer` | `.opencode/agents/stitch-designer.md` | يولّد شاشات، يستخرج Design DNA، ينشئ DESIGN.md |
 
 ### قواعد الاستدعاء
 1. **المهام الكبيرة** (مثل feature جديد) → استدعِ `@api-consumer` أولاً لتحليل الـ API
 2. **مشكلة أداء** على الموبايل → `@mobile-specialist` مع ملف الـ profile
 3. **بعد كتابة feature كامل** → `@test-writer` للاختبارات ثم `@ui-designer` للمراجعة البصرية
 4. **DTO mismatch** (حقل ناقص أو نوع خطأ) → `@api-consumer` لمزامنة العقود
-5. قدّم للـ subagent: ملفات مصدرية + السيناريو المحدد
-6. التوصيات تطبقها **أنت** — الـ subagents read-only
+5. **أحتاج تصميم UI جديد** → استدعِ `@stitch-designer` مع prompt نصي، ثم استلم DESIGN.md
+6. **التصميم جاهز من Stitch** → قبل التنفيذ، `@ui-designer` يراجعه للوصولية والتناسق
+7. قدّم للـ subagent: ملفات مصدرية + السيناريو المحدد
+8. التوصيات تطبقها **أنت** — الـ subagents read-only
 
 ## 📋 Output Format
 
