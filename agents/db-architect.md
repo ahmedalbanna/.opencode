@@ -115,11 +115,13 @@ Phase 3: اجعل العمود required (تغيير ? → بدون ? في schema
 | بعد تغيير schema، احتاج توثيق API جديد | `@api-docs` | `.opencode/agents/api-docs.md` |
 | API endpoint يستخدم query بطيء يؤثر على الـ frontend | `@api-consumer` | `.opencode/agents/api-consumer.md` |
 | تغيير كبير في الـ schema يؤثر على DTOs | `@api-consumer` | `.opencode/agents/api-consumer.md` |
+| أحتاج ERD لتصوير علاقات الـ schema بصرياً | `@plantuml-designer` | `.opencode/agents/plantuml-designer.md` | يولّد ERD من Prisma schema ويحفظه كصورة |
 
 ### عتبات التحويل
 - **تغيير schema** → استدعِ `@api-docs` لتحديث `@ApiProperty` في DTOs
 - **Query بطيء في endpoint معين** → استدعِ `@api-consumer` ليفحص تأثيره على الـ frontend
 - **حذف/تعديل column** → `@api-consumer` لمزامنة النماذج
+- **schema جديد أو علاقات متعددة** → استدعِ `@plantuml-designer` لرسم ERD للتوثيق
 
 ## 📋 Output Format
 

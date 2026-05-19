@@ -73,9 +73,11 @@ hidden: false
 | وجدت ثغرات أمنية في الـ spec (مثل "no auth") | `@security-guard` | `.opencode/agents/security-guard.md` |
 | وجدت تناقضاً في التصميم (مثل "mobile app" بدون إشارة لـ Flutter) | `@mobile-specialist` | `.opencode/agents/mobile-specialist.md` |
 | وجدت غموضاً في API contracts | `@api-consumer` | `.opencode/agents/api-consumer.md` |
+| أحتاج توثيقاً بصرياً للمتطلبات (diagrams) | `@plantuml-designer` | `.opencode/agents/plantuml-designer.md` | يولّد diagrams من spec/plan ويضيفها للتوثيق |
 
 ### عتبات التحويل
 - **مشكلة خارج تخصصك** (أمن، تصميم، بنية API) ← استدعِ الـ subagent المناسب
+- **الـ spec يحتاج توثيقاً بصرياً** ← استدعِ `@plantuml-designer` لإنشاء diagrams
 - **تقريرك النهائي** يُرفع للوكيل الأساسي (`backend-dev` أو `frontend-dev`)
 
 ## 📋 Output Format

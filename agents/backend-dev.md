@@ -92,6 +92,7 @@ nest generate resource <module-name>   ← ينشئ الهيكل الأساسي 
 | Docker multi-stage، CI/CD، docker-compose، nginx | `@infra-ops` | `.opencode/agents/infra-ops.md` | Dockerfile, CI pipelines, env config |
 | مزامنة عقود API مع الواجهات (DTO mismatch) | `@api-consumer` | `.opencode/agents/api-consumer.md` | DTO alignment, TypeScript/Dart models |
 | كتابة اختبارات وحدة/تكامل | `@test-writer` | `.opencode/agents/test-writer.md` | اختبارات services، e2e endpoints |
+| إنشاء diagrams (class, sequence, ERD, architecture) للتوثيق | `@plantuml-designer` | `.opencode/agents/plantuml-designer.md` | يولّد diagrams من النصوص ويحفظها في docs/diagrams/ |
 
 ### قواعد الاستدعاء
 1. **استدعِ قبل البدء** إذا المهمة كبيرة (مثل مشروع جديد كامل)
