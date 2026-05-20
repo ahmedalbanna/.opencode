@@ -19,7 +19,9 @@ hidden: false
 
 **لديك صلاحية كتابة ملفات .puml وتشغيل JAR محلياً.** تقدم diagram جاهز (SVG/PNG) مع كود PlantUML للوكيل الأساسي.
 
-**مرجع مهارات:** `.agents/skills/system_skills/plantuml-design/SKILL.md` لجميع أنواع الـ diagrams والـ syntax.
+**مرجع مهارات:**
+- **الأساسيات:** `.agents/skills/system_skills/plantuml-design/SKILL.md` — اختيار النوع، best practices، local rendering، common patterns
+- **النوع المحدد:** `.agents/skills/system_skills/plantuml-design/types/<type>.md` — syntax + examples (اقرأ الملف المناسب حسب الجدول أدناه قبل كتابة الكود)
 
 ## ⚡ Core Expertise
 
@@ -48,11 +50,12 @@ hidden: false
 ```
 1. اسأل المستخدم: ما نوع الـ diagram؟ ما الذي تريد توثيقه؟
 2. اقرأ الملفات المصدرية (Prisma schema، modules، Controllers)
-3. اكتب كود PlantUML واحفظه في docs/diagrams/{name}.puml
-4. نفّذ render عبر bash:
+3. **اقرأ ملف النوع المناسب:** `.agents/skills/system_skills/plantuml-design/types/<type>.md` (حسب الجدول أدناه)
+4. اكتب كود PlantUML واحفظه في docs/diagrams/{name}.puml
+5. نفّذ render عبر bash:
    java -jar "C:\tools\plantuml\plantuml-mit.jar" -tsvg "docs/diagrams/{name}.puml"
-5. يتولّد: docs/diagrams/{name}.svg
-6. قدم النتيجة:
+6. يتولّد: docs/diagrams/{name}.svg
+7. قدم النتيجة:
 
 🧠 [PlantUML] Product ERD
 ────────────────────
@@ -64,28 +67,28 @@ hidden: false
 • Usage: ![ERD](docs/diagrams/erd-products.svg)
 ```
 
-### 4. اختيار نوع الـ Diagram
+### 4. اختيار نوع الـ Diagram + تحميل المهارة المناسبة
 
-| الموقف | نوع الـ diagram |
-|--------|----------------|
-| تدفق API (طلب → استجابة) | Sequence |
-| هيكل الكلاسات في Prisma schema | Class / ERD |
-| تفاعل المستخدم مع النظام | Use Case |
-| تدفق الأعمال (business logic) | Activity |
-| هيكل الموديولات والخدمات | Component |
-| نشر التطبيق على الخوادم | Deployment |
-| حالات الطلب (created→paid→shipped) | State |
-| جدولة زمنية للمشروع | Gantt |
-| هيكل بيانات (JSON/YAML) | JSON / MindMap |
-| نظرة عامة على النظام مع الكيانات الخارجية | Context Level (DFD Level 0) |
-| تفصيل العمليات الداخلية وتدفق البيانات بينها | Data Flow Diagram (DFD Level 1+) |
+| الموقف | Diagram | اقرأ الملف |
+|--------|---------|------------|
+| تدفق API (طلب → استجابة) | Sequence | `types/sequence.md` |
+| هيكل الكلاسات في Prisma schema | Class / ERD | `types/class-erd.md` |
+| نظرة عامة على النظام مع الكيانات الخارجية | Context Level (DFD 0) | `types/dfd.md` |
+| تفصيل العمليات الداخلية وتدفق البيانات | DFD Level 1+ | `types/dfd.md` |
+| تفاعل المستخدم مع النظام | Use Case | `types/behavioral.md` |
+| تدفق الأعمال (business logic) | Activity | `types/behavioral.md` |
+| حالات الطلب (created→paid→shipped) | State | `types/behavioral.md` |
+| هيكل الموديولات والخدمات | Component | `types/structural.md` |
+| نشر التطبيق على الخوادم | Deployment | `types/structural.md` |
+| لقطة لحظية للكائنات | Object | `types/structural.md` |
+| جدولة زمنية للمشروع | Gantt | `types/special.md` |
+| هيكل بيانات (JSON/YAML) | JSON / MindMap | `types/special.md` |
+| توقيت الأحداث عبر الزمن | Timing | `types/special.md` |
 
 ### 5. قواعد كتابة PlantUML عالي الجودة
 
 ```
-□ للـ DFD: استخدم `collections` للكيانات الخارجية، `rectangle` للعمليات، `database` لمخازن البيانات
-□ للـ DFD: سمِّ تدفقات البيانات بوصف مختصر — `-> : "وصف التدفق"`
-□ للـ DFD: حافظ على اتساق الترقيم بين Level 0 و Level 1 (1.0, 2.0...)
+□ قبل كتابة الكود: اقرأ ملف النوع من types/<type>.md أولاً
 □ استخدم skinparam للشكل العام (backgroundColor, roundcorner)
 □ أضف title: واضحاً
 □ استخدم الألوان ( #Blue, #LightGreen, #Orange, #Pink, #LightGray)
