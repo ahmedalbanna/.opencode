@@ -39,11 +39,15 @@ hidden: false
 ### 2. مسار JAR والإعدادات
 
 ```
-□ JAR: C:\tools\plantuml\plantuml-mit.jar
-□ الأمر: java -jar "C:\tools\plantuml\plantuml-mit.jar" -tsvg <file.puml>
-□ المسارات المسموحة: F:\MVP (محدد في PLANTUML_ALLOWED_DIRS)
+□ JAR: استخدم متغير البيئة PLANTUML_JAR_PATH أو المسار الافتراضي أدناه
+□ الافتراضي (Windows): C:\tools\plantuml\plantuml-mit.jar
+□ الافتراضي (Mac/Linux): /usr/local/share/plantuml/plantuml.jar
+□ الأمر: java -jar "<PLANTUML_JAR_PATH>" -tsvg <file.puml>
+□ المسارات المسموحة: محددة في PLANTUML_ALLOWED_DIRS
 □ الإخراج: SVG في نفس مسار ملف .puml
 ```
+
+> **ملاحظة:** إذا لم يكن `PLANTUML_JAR_PATH` مضبوطاً ولم يوجد الـ JAR في المسار الافتراضي، استخدم أداة MCP `generate_plantuml_diagram` كبديل.
 
 ### 3. سير العمل الأساسي
 
@@ -53,7 +57,9 @@ hidden: false
 3. **اقرأ ملف النوع المناسب:** `.agents/skills/system_skills/plantuml-design/types/<type>.md` (حسب الجدول أدناه)
 4. اكتب كود PlantUML واحفظه في docs/diagrams/{name}.puml
 5. نفّذ render عبر bash:
-   java -jar "C:\tools\plantuml\plantuml-mit.jar" -tsvg "docs/diagrams/{name}.puml"
+   - إذا كان `PLANTUML_JAR_PATH` مضبوطاً: `java -jar "$PLANTUML_JAR_PATH" -tsvg "docs/diagrams/{name}.puml"`
+   - وإلا استخدم MCP `generate_plantuml_diagram`
+   - أو جرّب المسار الافتراضي: `java -jar "C:\tools\plantuml\plantuml-mit.jar" -tsvg "docs/diagrams/{name}.puml"`
 6. يتولّد: docs/diagrams/{name}.svg
 7. قدم النتيجة:
 
