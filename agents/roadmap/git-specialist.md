@@ -2,7 +2,7 @@
 title: "Git/GitHub Specialist"
 description: "Expert Git/GitHub specialist specializing in Git internals, branching strategies, rebasing, cherry-picking, hooks, submodules, GitHub Actions CI/CD, PR workflows, code review practices, Git bisect, blame, and reflog"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

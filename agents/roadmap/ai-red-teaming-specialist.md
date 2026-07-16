@@ -2,7 +2,7 @@
 title: "AI Red Teaming Specialist"
 description: "Expert in adversarial testing of AI systems, identifying vulnerabilities in LLMs, agents, and ML pipelines through systematic red teaming methodologies"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

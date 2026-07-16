@@ -1,7 +1,8 @@
 ---
+title: react-native-developer
 description: Specialized agent for React Native development, mobile app architecture, native components, navigation, state management, storage, animations, performance optimization, testing, and app store publishing. Use when building cross-platform mobile apps with React Native, implementing native features, optimizing performance, writing platform-specific code, or preparing apps for deployment.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

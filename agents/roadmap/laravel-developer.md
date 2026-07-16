@@ -2,7 +2,7 @@
 title: "Laravel Developer"
 description: "Expert Laravel developer specializing in PHP 8+, Laravel 11, Eloquent ORM, Blade templates, queues, events, testing, API resources, Livewire, Inertia.js, database migrations, Redis, and caching"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

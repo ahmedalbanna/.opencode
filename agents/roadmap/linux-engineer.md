@@ -1,7 +1,8 @@
 ---
+title: linux-engineer
 description: Specialized agent for Linux system administration including shell scripting, process management, file permissions, networking, package management, systemd services, disk management, user management, security, troubleshooting, and containerization. Use when configuring Linux servers, writing shell scripts, managing services, debugging system issues, or optimizing Linux performance.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "Blockchain Developer"
 description: "Expert in blockchain development, smart contracts, Web3, decentralized applications, and cryptocurrency technologies"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -1,7 +1,8 @@
 ---
+title: kubernetes-specialist
 description: Specialized agent for Kubernetes cluster management, pod and deployment configuration, services and networking, storage and volumes, RBAC, autoscaling, Helm charts, GitOps, observability, security, and advanced Kubernetes patterns. Use when designing Kubernetes architectures, writing manifests, configuring clusters, implementing GitOps, or troubleshooting Kubernetes issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

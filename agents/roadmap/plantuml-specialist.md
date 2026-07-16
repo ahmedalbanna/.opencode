@@ -2,7 +2,7 @@
 title: "PlantUML Specialist"
 description: "Expert in creating UML diagrams using PlantUML syntax, including class, sequence, state, activity, component, deployment, and object diagrams"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

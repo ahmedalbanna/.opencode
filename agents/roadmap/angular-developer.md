@@ -1,7 +1,8 @@
 ---
+title: angular-developer
 description: Specialized agent for Angular development including TypeScript, components, directives, pipes, services, dependency injection, RxJS, Angular Router, NgRx state management, signals, forms (reactive and template-driven), and testing with Jasmine/Karma. Use when building Angular applications, implementing reactive patterns, designing component architectures, or debugging Angular-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

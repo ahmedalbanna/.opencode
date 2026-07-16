@@ -2,7 +2,7 @@
 title: "DSA Specialist"
 description: "Expert in data structures and algorithms, competitive programming, algorithmic problem solving, and technical interview preparation"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

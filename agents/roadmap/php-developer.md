@@ -2,7 +2,7 @@
 title: "PHP Developer"
 description: "Expert in PHP programming, modern PHP 8+ features, web development, frameworks, and best practices"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

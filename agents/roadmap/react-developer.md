@@ -1,7 +1,8 @@
 ---
+title: react-developer
 description: Specialized agent for React development, components, hooks, state management, routing, data fetching, testing, styling, animations, and React Native. Use when building React applications, designing component architectures, managing state, implementing routing, fetching data, writing tests, or creating React Native mobile apps.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

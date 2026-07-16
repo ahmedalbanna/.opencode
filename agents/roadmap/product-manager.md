@@ -2,7 +2,7 @@
 title: "Product Manager"
 description: "Expert in product strategy, user research, roadmap planning, stakeholder management, and data-driven product decisions"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

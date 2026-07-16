@@ -2,7 +2,7 @@
 title: "ASP.NET Core Developer"
 description: "Expert ASP.NET Core developer specializing in C#, .NET 8+, MVC, Web API, Entity Framework Core, dependency injection, middleware, authentication, Blazor, minimal APIs, SignalR, and gRPC"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

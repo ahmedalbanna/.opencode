@@ -1,0 +1,324 @@
+# Tech Stack Detection Rules
+# Used by agent selection system to identify project technologies
+
+language:
+  python:
+    patterns:
+      - "python|django|flask|fastapi|pyramid|bottle"
+      - "\\.py$|requirements\\.txt|setup\\.py|pyproject\\.toml"
+      - "import django|from flask|from fastapi|import pandas|import numpy"
+    agents:
+      primary: "python-developer"
+      alternatives: ["django-developer", "flask-developer", "backend-developer"]
+  
+  javascript:
+    patterns:
+      - "javascript|js|node|nodejs|express|next|react|vue|angular"
+      - "\\.js$|package\\.json|webpack\\.config|babel\\.config"
+      - "require\\(|import.*from.*['\\\"]|module\\.exports"
+    agents:
+      primary: "javascript-developer"
+      alternatives: ["nodejs-developer", "frontend-developer"]
+  
+  typescript:
+    patterns:
+      - "typescript|ts|nestjs|nuxt"
+      - "\\.ts$|\\.tsx$|tsconfig\\.json"
+      - "import.*from.*['\\\"].*\\.ts|interface.*{|type.*="
+    agents:
+      primary: "typescript-specialist"
+      alternatives: ["nodejs-developer", "nestjs-developer", "full-stack-developer"]
+  
+  java:
+    patterns:
+      - "java|spring|spring-boot|hibernate|maven|gradle"
+      - "\\.java$|pom\\.xml|build\\.gradle"
+      - "public class|@RestController|@Service|@Autowired"
+    agents:
+      primary: "java-developer"
+      alternatives: ["spring-boot-developer", "backend-developer"]
+  
+  csharp:
+    patterns:
+      - "c#|csharp|aspnet|asp\\.net|entity framework"
+      - "\\.cs$|\\.csproj|\\.sln"
+      - "public class|namespace|using System|Controller"
+    agents:
+      primary: "backend-developer"
+      alternatives: ["aspnet-core-developer"]
+  
+  go:
+    patterns:
+      - "go|golang|gin|echo|fiber"
+      - "\\.go$|go\\.mod|go\\.sum"
+      - "package main|func main|import.*net/http"
+    agents:
+      primary: "go-developer"
+  
+  rust:
+    patterns:
+      - "rust|cargo|tokio|actix"
+      - "\\.rs$|Cargo\\.toml|Cargo\\.lock"
+      - "fn main|use std|pub struct|impl"
+    agents:
+      primary: "rust-developer"
+  
+  php:
+    patterns:
+      - "php|laravel|symfony|codeigniter"
+      - "\\.php$|composer\\.json|composer\\.lock"
+      - "<\\?php|use.*laravel|class.*Controller"
+    agents:
+      primary: "php-developer"
+      alternatives: ["laravel-developer", "backend-developer"]
+  
+  kotlin:
+    patterns:
+      - "kotlin|kt|android|jetpack"
+      - "\\.kt$|\\.kts|build\\.gradle\\.kts"
+      - "fun main|class.*Activity|override fun"
+    agents:
+      primary: "kotlin-developer"
+      alternatives: ["android-developer"]
+  
+  swift:
+    patterns:
+      - "swift|ios|macos|xcode|uikit|swiftui"
+      - "\\.swift$|Podfile|Cartfile"
+      - "import UIKit|import SwiftUI|func viewDid"
+    agents:
+      primary: "ios-developer"
+  
+  dart:
+    patterns:
+      - "dart|flutter|flutter"
+      - "\\.dart$|pubspec\\.yaml"
+      - "import.*flutter|class.*StatelessWidget|void main"
+    agents:
+      primary: "flutter-developer"
+
+framework:
+  react:
+    patterns:
+      - "react|reactjs|nextjs|next\\.js"
+      - "useEffect|useState|useContext|ReactDOM"
+      - "import.*from.*['\\\"]react|<App>|<Router>"
+    agents:
+      primary: "react-developer"
+      helpers: ["typescript-specialist", "frontend-developer"]
+  
+  angular:
+    patterns:
+      - "angular|ng-"
+      - "\\.component\\.ts|\\.module\\.ts|angular\\.json"
+      - "@Component|@NgModule|import.*from.*['\\\"]@angular"
+    agents:
+      primary: "angular-developer"
+  
+  vue:
+    patterns:
+      - "vue|nuxt|nuxtjs"
+      - "\\.vue$|vue\\.config\\.js|nuxt\\.config\\.js"
+      - "<template>|<script>|export default|Vue\\.component"
+    agents:
+      primary: "vue-developer"
+  
+  django:
+    patterns:
+      - "django|djangorest"
+      - "manage\\.py|settings\\.py|urls\\.py|models\\.py"
+      - "from django|class.*Model|urlpatterns"
+    agents:
+      primary: "django-developer"
+  
+  spring:
+    patterns:
+      - "spring|spring-boot"
+      - "pom\\.xml|application\\.properties|application\\.yml"
+      - "@SpringBootApplication|@RestController|@Autowired"
+    agents:
+      primary: "spring-boot-developer"
+  
+  nestjs:
+    patterns:
+      - "nestjs|nest\\.js"
+      - "main\\.ts|app\\.module\\.ts|controller\\.ts|service\\.ts"
+      - "@Controller|@Injectable|@Module|@Get|@Post"
+    agents:
+      primary: "typescript-specialist"
+      helpers: ["nodejs-developer", "backend-developer"]
+  
+  laravel:
+    patterns:
+      - "laravel|lumen"
+      - "artisan|composer\\.json|routes/web\\.php"
+      - "namespace App|Route::|class.*Controller"
+    agents:
+      primary: "laravel-developer"
+
+database:
+  postgresql:
+    patterns:
+      - "postgresql|postgres|psql|prisma|typeorm"
+      - "schema\\.prisma|migration|CREATE TABLE|ALTER TABLE"
+      - "postgresql://|postgres://"
+    agents:
+      primary: "postgresql-dba"
+      helpers: ["db-architect"]
+  
+  mongodb:
+    patterns:
+      - "mongodb|mongo|mongoose"
+      - "mongoose|MongoClient|\\.find\\(|\\.insertOne"
+      - "mongodb://"
+    agents:
+      primary: "mongodb-specialist"
+  
+  redis:
+    patterns:
+      - "redis|cache|memcached"
+      - "redis\\.io|redis\\.set|redis\\.get"
+      - "redis://"
+    agents:
+      primary: "redis-specialist"
+  
+  mysql:
+    patterns:
+      - "mysql|mariadb"
+      - "mysql://|CREATE DATABASE|SELECT.*FROM"
+    agents:
+      primary: "sql-specialist"
+
+infrastructure:
+  docker:
+    patterns:
+      - "docker|container|containerd"
+      - "Dockerfile|docker-compose\\.yml|docker-compose\\.yaml"
+      - "FROM.*alpine|FROM.*node|COPY.*\\."
+    agents:
+      primary: "docker-specialist"
+  
+  kubernetes:
+    patterns:
+      - "kubernetes|k8s|helm"
+      - "deployment\\.yaml|service\\.yaml|Chart\\.yaml"
+      - "apiVersion: apps/v1|kind: Deployment|kind: Service"
+    agents:
+      primary: "kubernetes-specialist"
+  
+  aws:
+    patterns:
+      - "aws|amazon web services|lambda|ec2|s3|cloudformation|terraform"
+      - "aws-sdk|@aws-sdk|boto3|terraform\\.tfstate"
+    agents:
+      primary: "aws-architect"
+  
+  azure:
+    patterns:
+      - "azure|azure functions|app service"
+      - "azure-sdk|@azure|function\\.json"
+    agents:
+      primary: "devops-engineer"
+  
+  gcp:
+    patterns:
+      - "google cloud|gcp|firebase|cloud functions"
+      - "google-cloud|@google-cloud|firebase\\.json"
+    agents:
+      primary: "devops-engineer"
+
+architecture:
+  ddd:
+    patterns:
+      - "ddd|domain-driven|domain model|aggregate|entity|value object|repository pattern"
+      - "domain/|application/|infrastructure/|entities/|usecases/"
+    agents:
+      primary: "software-architect"
+      helpers: ["backend-developer", "db-architect"]
+  
+  microservices:
+    patterns:
+      - "microservice|microservice|event-driven|message queue|kafka|rabbitmq|grpc"
+      - "service discovery|api gateway|circuit breaker|container orchestration"
+    agents:
+      primary: "software-architect"
+      helpers: ["devops-engineer", "backend-developer", "kubernetes-specialist"]
+  
+  mvc:
+    patterns:
+      - "mvc|model-view-controller|controller|model|view"
+      - "Controller\\.ts|Model\\.ts|View\\.tsx|routes/"
+    agents:
+      primary: "full-stack-developer"
+  
+  serverless:
+    patterns:
+      - "serverless|lambda|function as a service|faas|aws lambda|azure functions"
+      - "serverless\\.yml|function\\.ts|handler\\.ts"
+    agents:
+      primary: "devops-engineer"
+      helpers: ["backend-developer", "aws-architect"]
+  
+  event-driven:
+    patterns:
+      - "event-driven|event sourcing|message broker|kafka|rabbitmq|rabbitmq|pub/sub"
+      - "Event|EventHandler|Publisher|Subscriber|KafkaProducer|RabbitMQ"
+    agents:
+      primary: "software-architect"
+      helpers: ["backend-developer", "devops-engineer"]
+
+project_type:
+  web_app:
+    patterns:
+      - "web application|website|web app|portal|dashboard"
+      - "browser|responsive design|progressive web app|pwa"
+    agents:
+      primary: "frontend-developer"
+      helpers: ["backend-developer", "ui-designer", "css-specialist"]
+  
+  mobile_app:
+    patterns:
+      - "mobile app|android app|ios app|flutter|react native|swift|kotlin"
+      - "app store|play store|mobile|touch|gesture"
+    agents:
+      primary: "mobile-specialist"
+      helpers: ["flutter-developer", "ios-developer", "android-developer"]
+  
+  api_service:
+    patterns:
+      - "rest api|graphql api|web service|backend api|endpoint"
+      - "POST|GET|PUT|DELETE|API|REST|GraphQL"
+    agents:
+      primary: "backend-developer"
+      helpers: ["api-designer", "security-guard"]
+  
+  ai_ml:
+    patterns:
+      - "machine learning|ml|artificial intelligence|ai|deep learning|neural network"
+      - "tensorflow|pytorch|keras|scikit-learn|pandas|numpy|model training"
+    agents:
+      primary: "ml-engineer"
+      helpers: ["data-engineer", "python-developer", "ai-engineer"]
+  
+  data_pipeline:
+    patterns:
+      - "data pipeline|etl|data warehouse|data lake|big data"
+      - "airflow|spark|kafka|kinesis|etl|data transformation"
+    agents:
+      primary: "data-engineer"
+      helpers: ["python-developer", "postgresql-dba", "devops-engineer"]
+  
+  blockchain:
+    patterns:
+      - "blockchain|smart contract|web3|ethereum|solidity|defi"
+      - "contract|abi|web3\\.js|eth\\.|truffle|hardhat"
+    agents:
+      primary: "blockchain-developer"
+  
+  desktop_app:
+    patterns:
+      - "desktop app|electron|qt|wpf|winforms|macos app"
+      - "electron|electron\\.js|\\.exe|\\.dmg|\\.deb"
+    agents:
+      primary: "full-stack-developer"
+      helpers: ["frontend-developer", "backend-developer"]

@@ -1,7 +1,8 @@
 ---
+title: graphql-specialist
 description: Specialized agent for GraphQL development, schema design, queries, mutations, subscriptions, resolvers, type system, directives, caching, pagination, real-time data, authorization, and client/server implementations (Apollo, Relay, urql, GraphQL Yoga, Mercurius). Use when designing GraphQL schemas, writing queries and mutations, building GraphQL servers, implementing clients, optimizing performance, or setting up real-time subscriptions.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

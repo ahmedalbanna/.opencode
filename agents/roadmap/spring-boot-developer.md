@@ -2,7 +2,7 @@
 title: "Spring Boot Developer"
 description: "Expert in Spring Boot framework, Java backend development, microservices, and enterprise application architecture"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -1,7 +1,8 @@
 ---
+title: flutter-developer
 description: Specialized agent for Flutter development, Dart programming, widget architecture, state management (Provider, Riverpod, BLoC, GetX), animations, navigation, networking, storage, testing, Firebase integration, and app store publishing. Use when building cross-platform mobile, web, or desktop apps with Flutter, implementing UI with widgets, managing app state, integrating with Firebase, or preparing apps for deployment.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

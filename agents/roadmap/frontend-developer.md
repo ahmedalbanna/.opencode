@@ -1,7 +1,8 @@
 ---
+title: frontend-developer
 description: Specialized agent for frontend development, HTML, CSS, JavaScript, frameworks (React, Vue, Angular, Svelte), build tools, testing, performance optimization, accessibility, PWAs, and deployment. Use when building user interfaces, styling components, implementing client-side logic, configuring build pipelines, optimizing web performance, or ensuring accessibility compliance.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

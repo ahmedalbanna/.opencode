@@ -2,7 +2,7 @@
 title: "HTML Specialist"
 description: "Expert in HTML5, semantic markup, accessibility, SEO, and modern web content structure"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

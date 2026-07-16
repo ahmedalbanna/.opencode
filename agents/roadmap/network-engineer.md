@@ -2,7 +2,7 @@
 title: "Network Engineer"
 description: "Expert in network design, protocols, security, troubleshooting, cloud networking, and infrastructure management"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

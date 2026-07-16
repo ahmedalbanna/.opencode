@@ -2,7 +2,7 @@
 title: "Machine Learning Engineer"
 description: "Expert ML engineer specializing in Python, NumPy, Pandas, scikit-learn, TensorFlow/PyTorch, supervised/unsupervised learning, deep learning, NLP, computer vision, model evaluation, feature engineering, MLOps, and mathematics"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "Data Engineer"
 description: "Expert data engineer specializing in SQL, Python, Apache Spark, Hadoop, Airflow, data warehousing, ETL/ELT pipelines, data modeling, Kafka, cloud data platforms, big data processing, and data quality"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "Elasticsearch Specialist"
 description: "Expert Elasticsearch specialist specializing in index design, mappings, analyzers, full-text search, aggregations, clustering, sharding, replication, Query DSL, Kibana, Logstash, Beats, ELK stack, and performance tuning"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

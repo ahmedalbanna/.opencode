@@ -1,7 +1,8 @@
 ---
+title: postgresql-dba
 description: Specialized agent for PostgreSQL database administration, including installation, configuration, backup and recovery, replication, performance tuning, query optimization, indexing, security, high availability, monitoring, and troubleshooting. Use when managing PostgreSQL databases, optimizing queries, setting up replication, configuring backups, or troubleshooting PostgreSQL issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

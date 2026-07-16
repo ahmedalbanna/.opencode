@@ -1,7 +1,8 @@
 ---
+title: backend-developer
 description: Specialized agent for backend development, server-side architecture, databases, APIs, authentication, caching, message brokers, microservices, scalability, CI/CD, and observability. Use when building server-side applications, designing database schemas, implementing authentication, setting up caching strategies, deploying services, or scaling backend systems.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

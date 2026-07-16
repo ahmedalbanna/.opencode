@@ -1,7 +1,8 @@
 ---
+title: vue-developer
 description: Specialized agent for Vue.js 3 development including Composition API, Options API, Vue Router, Pinia state management, Vite, single-file components, directives, transitions, SSR/SSG with Nuxt, testing with Vitest, and UI libraries (Vuetify, Element Plus). Use when building Vue applications, implementing reactive state management, designing component architectures, or debugging Vue-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

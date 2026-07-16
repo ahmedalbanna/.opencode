@@ -1,7 +1,8 @@
 ---
+title: terraform-engineer
 description: Specialized agent for Terraform infrastructure as code including HCL syntax, providers, modules, state management, workspaces, Terraform Cloud, testing, CI/CD integration, security scanning, and best practices for multi-cloud infrastructure. Use when designing cloud infrastructure, implementing IaC pipelines, managing Terraform state, or debugging Terraform-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

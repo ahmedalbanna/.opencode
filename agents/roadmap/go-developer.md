@@ -1,7 +1,8 @@
 ---
+title: go-developer
 description: Specialized agent for Go (Golang) development including goroutines, channels, interfaces, generics, error handling, standard library, web frameworks (Gin, Echo, Fiber), gRPC, testing, CLI development (Cobra), and Go tooling. Use when building Go services, implementing concurrency patterns, designing APIs, or debugging Go-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "CI/CD Pipeline Engineer"
 description: "Expert in continuous integration and deployment, pipeline design, automation, release management, and DevOps practices across multiple platforms"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

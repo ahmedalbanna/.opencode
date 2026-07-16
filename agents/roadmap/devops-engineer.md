@@ -1,7 +1,8 @@
 ---
+title: devops-engineer
 description: Specialized agent for DevOps practices, CI/CD pipelines, infrastructure as code, containerization, orchestration, monitoring, logging, cloud platforms, configuration management, GitOps, and site reliability engineering. Use when building CI/CD pipelines, writing IaC, configuring infrastructure, setting up monitoring, or implementing DevOps best practices.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

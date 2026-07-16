@@ -2,7 +2,7 @@
 title: "AI Engineer"
 description: "Expert AI Engineer specializing in LLMs, RAG, AI agents, prompt engineering, and building production AI applications"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

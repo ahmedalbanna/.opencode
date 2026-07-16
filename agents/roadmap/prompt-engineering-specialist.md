@@ -2,7 +2,7 @@
 title: "Prompt Engineering Specialist"
 description: "Expert in crafting, optimizing, and evaluating prompts for LLMs across text, code, image, and multi-modal use cases"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

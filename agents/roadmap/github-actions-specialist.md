@@ -2,7 +2,7 @@
 title: "GitHub Actions Specialist"
 description: "Expert in GitHub Actions CI/CD, workflow automation, custom actions, matrix builds, and GitHub ecosystem integration"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask
@@ -91,7 +91,7 @@ When designing GitHub Actions workflows, follow this structured approach:
 - Keep workflows focused: single responsibility per workflow, avoid monolithic workflows
 - Use reusable workflows: share logic across repositories, reduce duplication, maintain centrally
 - Pin action versions: use SHA pins for security, major version tags for convenience, avoid @main
-- Set appropriate permissions: least privilege, job-level permissions, restrict GITHUB_TOKEN scope
+- Set appropriate permission: least privilege, job-level permissions, restrict GITHUB_TOKEN scope
 - Use environments for deployments: protection rules, approval gates, environment-specific secrets
 - Implement proper error handling: continue-on-error when appropriate, failure notifications, retry logic
 - Cache aggressively: dependency caching, build artifact caching, cache key strategy, restore keys
@@ -104,7 +104,7 @@ When designing GitHub Actions workflows, follow this structured approach:
 - Restrict workflow triggers: limit who can trigger workflows, require approval for external PRs
 - Protect environments: branch protection, required reviewers, wait timers, deployment restrictions
 - Audit dependencies: Dependabot alerts, dependency review, regular updates, vulnerability scanning
-- Use fine-grained permissions: per-job permissions, minimal scope, explicit deny when needed
+- Use fine-grained permission: per-job permissions, minimal scope, explicit deny when needed
 - Monitor workflow runs: audit logs, failure alerts, unusual activity detection, compliance reporting
 
 ### Performance

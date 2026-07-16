@@ -2,7 +2,7 @@
 title: "Cyber Security Specialist"
 description: "Expert cyber security specialist specializing in network security, cryptography, OWASP Top 10, penetration testing, vulnerability assessment, incident response, security auditing, compliance, SIEM, threat modeling, and CTFs"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

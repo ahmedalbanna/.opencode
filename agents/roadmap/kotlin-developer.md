@@ -2,7 +2,7 @@
 title: "Kotlin Developer"
 description: "Expert in Kotlin programming, Android development, coroutines, multiplatform, and modern JVM development"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

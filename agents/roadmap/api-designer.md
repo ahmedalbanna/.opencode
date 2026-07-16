@@ -1,7 +1,8 @@
 ---
+title: api-designer
 description: Specialized agent for REST, GraphQL, gRPC, and SOAP API design, endpoint definition, request/response schema design, API security, testing, and documentation. Use when designing API contracts, defining RESTful endpoints, creating GraphQL schemas, writing OpenAPI/Swagger specifications, planning API versioning strategies, or designing API integration patterns.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

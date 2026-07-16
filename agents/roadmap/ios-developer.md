@@ -1,7 +1,8 @@
 ---
+title: ios-developer
 description: Specialized agent for iOS app development using Swift and SwiftUI, including UIKit, Combine, Core Data, SwiftUI, async/await, MVVM architecture, Xcode, Swift Package Manager, testing (XCTest), and App Store distribution. Use when building iOS apps, designing SwiftUI interfaces, implementing iOS architecture patterns, or debugging iOS-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

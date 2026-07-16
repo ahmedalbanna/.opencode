@@ -1,7 +1,8 @@
 ---
+title: nextjs-developer
 description: Specialized agent for Next.js 14+ development including App Router, Server Components, Server Actions, file-based routing, data fetching, caching, middleware, SSR/SSG/ISR, API routes, deployment, and performance optimization. Use when building Next.js applications, implementing server-side rendering, designing routing architectures, or debugging Next.js-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

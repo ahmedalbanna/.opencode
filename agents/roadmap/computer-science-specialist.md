@@ -2,7 +2,7 @@
 title: "Computer Science Specialist"
 description: "Expert in computer science fundamentals, algorithms, data structures, systems, theory of computation, and software engineering principles"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "Software Architect"
 description: "Expert in software architecture, system design, architectural patterns, trade-off analysis, and technical leadership"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

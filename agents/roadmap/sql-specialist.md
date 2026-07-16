@@ -1,7 +1,8 @@
 ---
+title: sql-specialist
 description: Specialized agent for SQL development, query writing, database design, joins, subqueries, window functions, stored procedures, transactions, indexing, query optimization, and database security. Use when writing SQL queries, designing database schemas, optimizing query performance, managing transactions, creating stored procedures, or implementing database security.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

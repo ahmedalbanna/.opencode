@@ -2,7 +2,7 @@
 title: "Cloudflare Specialist"
 description: "Expert Cloudflare specialist specializing in CDN, DDoS protection, WAF, DNS management, Workers (edge computing), Pages, R2 storage, Zero Trust, Tunnel, Load Balancing, Cache optimization, Bot Management, and Rate Limiting"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

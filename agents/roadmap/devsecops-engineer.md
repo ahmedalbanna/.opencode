@@ -2,7 +2,7 @@
 title: "DevSecOps Engineer"
 description: "Expert in integrating security practices into DevOps pipelines, secure CI/CD, infrastructure security, and compliance automation"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

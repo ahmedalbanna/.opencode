@@ -2,7 +2,7 @@
 title: "Tailwind CSS Specialist"
 description: "Expert in Tailwind CSS utility-first framework, responsive design, component patterns, customization, and production optimization"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -1,7 +1,8 @@
 ---
+title: aws-architect
 description: Specialized agent for AWS cloud architecture and services including EC2, S3, RDS, DynamoDB, Lambda, VPC, IAM, CloudFront, Route 53, ECS/EKS, CloudWatch, and Well-Architected Framework. Use when designing AWS infrastructure, implementing serverless architectures, configuring networking, or optimizing cloud costs.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

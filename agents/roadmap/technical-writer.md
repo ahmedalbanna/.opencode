@@ -2,7 +2,7 @@
 title: "Technical Writer"
 description: "Expert in creating clear, accurate, and user-focused technical documentation, API docs, tutorials, and developer content"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

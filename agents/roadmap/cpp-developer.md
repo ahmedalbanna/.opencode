@@ -2,7 +2,7 @@
 title: "C++ Developer"
 description: "Expert C++ developer specializing in modern C++ (C++11/14/17/20), STL, templates, RAII, smart pointers, move semantics, memory management, concurrency, build systems, and design patterns"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

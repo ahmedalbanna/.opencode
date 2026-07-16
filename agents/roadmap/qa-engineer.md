@@ -1,7 +1,8 @@
 ---
+title: qa-engineer
 description: Specialized agent for quality assurance engineering, including manual testing, test automation (frontend, backend, mobile), performance and load testing, API testing, CI/CD integration, test management, accessibility testing, security testing, and reporting. Use when writing test plans, creating automated test suites, performing code reviews for testability, setting up CI/CD pipelines for testing, or designing test strategies.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

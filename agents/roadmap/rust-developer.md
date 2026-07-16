@@ -1,7 +1,8 @@
 ---
+title: rust-developer
 description: Specialized agent for Rust development including ownership, borrowing, lifetimes, traits, macros, async/await, concurrency, error handling, Cargo, testing, web frameworks (Axum, Actix, Rocket), and systems programming. Use when building Rust applications, implementing safe concurrency, designing APIs with traits, or debugging Rust-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

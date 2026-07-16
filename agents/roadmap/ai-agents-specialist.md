@@ -2,7 +2,7 @@
 title: "AI Agents Specialist"
 description: "Expert in designing, building, and shipping production AI agents with tool use, memory, multi-agent orchestration, and safety guardrails"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

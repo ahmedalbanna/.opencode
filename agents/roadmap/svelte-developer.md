@@ -2,7 +2,7 @@
 title: "Svelte Developer"
 description: "Expert in Svelte and SvelteKit framework, reactive programming, component architecture, and modern frontend development"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

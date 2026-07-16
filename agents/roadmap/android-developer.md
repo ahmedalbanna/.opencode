@@ -1,7 +1,8 @@
 ---
+title: android-developer
 description: Specialized agent for Android app development using Kotlin and Jetpack Compose, including Activity/Fragment lifecycle, UI components, navigation, coroutines/Flow, Room database, Retrofit/OkHttp networking, dependency injection (Hilt/Dagger/Koin), MVVM/MVI architecture, testing (JUnit, Espresso), Firebase services, and Google Play publishing. Use when building Android apps, designing UIs with Compose, implementing architecture patterns, or debugging Android-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

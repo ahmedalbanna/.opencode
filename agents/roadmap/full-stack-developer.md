@@ -2,7 +2,7 @@
 title: "Full-Stack Developer"
 description: "Expert in both frontend and backend development, capable of building complete web applications from database to user interface"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

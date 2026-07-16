@@ -1,7 +1,8 @@
 ---
+title: css-specialist
 description: Specialized agent for CSS development, selectors, layout systems (Flexbox, Grid), animations, responsive design, typography, color systems, CSS architecture (BEM), preprocessors (Sass), CSS-in-JS, and performance optimization. Use when writing CSS, designing layouts, creating animations, implementing responsive designs, building design systems, or debugging CSS issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

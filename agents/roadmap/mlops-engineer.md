@@ -2,7 +2,7 @@
 title: "MLOps Engineer"
 description: "Expert MLOps engineer specializing in ML pipeline automation, model versioning, CI/CD for ML, model monitoring, feature stores, containerization, Kubernetes for ML, A/B testing, model serving, and drift detection"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

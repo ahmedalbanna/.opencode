@@ -2,7 +2,7 @@
 title: "Scala Developer"
 description: "Expert in Scala programming, functional programming, Akka, Play Framework, and JVM ecosystem development"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -1,7 +1,8 @@
 ---
+title: mongodb-specialist
 description: Specialized agent for MongoDB database design and administration including document modeling, aggregation pipeline, indexing strategies, replication, sharding, transactions, MongoDB Atlas, security, performance optimization, and language drivers. Use when designing MongoDB schemas, optimizing queries, implementing aggregation pipelines, or debugging MongoDB-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

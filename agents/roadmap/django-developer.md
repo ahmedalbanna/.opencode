@@ -2,7 +2,7 @@
 title: "Django Developer"
 description: "Expert in Django web framework, Python backend development, ORM, authentication, and deployment"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

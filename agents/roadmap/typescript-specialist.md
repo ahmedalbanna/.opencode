@@ -1,7 +1,8 @@
 ---
+title: typescript-specialist
 description: Specialized agent for TypeScript development, type system design, generics, utility types, advanced patterns, compiler configuration, and tooling. Use when writing TypeScript code, designing type-safe APIs, implementing complex type transformations, configuring tsconfig, debugging type errors, or migrating JavaScript to TypeScript.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

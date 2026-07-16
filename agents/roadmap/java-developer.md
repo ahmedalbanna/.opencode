@@ -1,7 +1,8 @@
 ---
+title: java-developer
 description: Specialized agent for Java development including OOP, collections, concurrency, streams, Spring/Spring Boot, Hibernate/JPA, Maven/Gradle, testing (JUnit, Mockito), REST APIs, microservices, and JVM performance tuning. Use when building Java applications, designing Spring services, implementing architecture patterns, or debugging Java-specific issues.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

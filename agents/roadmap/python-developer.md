@@ -1,7 +1,8 @@
 ---
+title: python-developer
 description: Specialized agent for Python development, including syntax, data structures, OOP, concurrency, testing, packaging, web frameworks (Django, FastAPI, Flask), type hinting, and best practices. Use when writing Python code, building APIs, creating scripts, or implementing Python applications.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

@@ -2,7 +2,7 @@
 title: "Shell Scripting Specialist"
 description: "Expert in Bash/shell scripting, Linux command line, automation, system administration, and DevOps tooling"
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

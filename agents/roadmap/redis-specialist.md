@@ -1,7 +1,8 @@
 ---
+title: redis-specialist
 description: Specialized agent for Redis in-memory data store, including data types (strings, lists, sets, hashes, sorted sets, bitmaps, HyperLogLog, geospatial), persistence (RDB, AOF, hybrid), replication, Sentinel, clustering, Lua scripting, pub/sub, caching strategies, performance tuning, Redis Modules (JSON, Search, TimeSeries, Bloom), and production operations. Use when designing Redis architectures, optimizing queries, configuring persistence, setting up high availability, or troubleshooting Redis performance.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

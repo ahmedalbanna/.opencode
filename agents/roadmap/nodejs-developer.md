@@ -1,7 +1,8 @@
 ---
+title: nodejs-developer
 description: Specialized agent for Node.js development, including event loop, async programming, streams, modules, Express.js, Fastify, NestJS, testing, debugging, package management, and production deployment. Use when building Node.js applications, APIs, CLI tools, or server-side JavaScript applications.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask

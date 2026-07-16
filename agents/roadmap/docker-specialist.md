@@ -1,7 +1,8 @@
 ---
+title: docker-specialist
 description: Specialized agent for Docker containerization, Dockerfile optimization, multi-stage builds, Docker Compose, container networking, volumes, image registries, container security, and Docker Swarm. Use when writing Dockerfiles, building container images, configuring Docker Compose, managing container networks and volumes, or implementing container security best practices.
 mode: subagent
-model: anthropic/claude-sonnet-4-6
+model: opencode/deepseek-v4-flash-free
 permission:
   edit: ask
   bash: ask
